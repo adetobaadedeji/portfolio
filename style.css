@@ -8,8 +8,9 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;  
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height:auto;
+  overflow-x: hidden;
 }
 
 
@@ -344,8 +345,8 @@ footer{
     height: 55vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
     pointer-events: none;
   }
   .nav-links.open {
