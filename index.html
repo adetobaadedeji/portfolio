@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./reset.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Profile Page</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="user-box">
+      <figure>
+          <img id="profile_picture" src="images/profile_picture.jpg" alt="profile picture">
+      </figure>
+      <div>
+          <h1>Adetoba Adedeji</h1>
+          <p> FrontEnd Developer</p>
+      </div>
+  </div>
+  </header>
+  
+    <main class="wrapper">
+      <section class="about">
+        <h1>Who am I ?</h1>
+        <p> I'm <span>Adetoba Adedeji</span>, a highly organized and detail-oriented Chemical Engineering graduate. 
+          I love technology and I developed passion for Software Development during my undergraduate days, and now a Frontend Developer
+          with a year of experience in Frontend Web Development. I have a depth knowledge of Frontend Web Development using development tools such as
+          HTML, CSS, Bootstrap and JavaScript. I'm currently learning other tools such as React.js, Vue, Node.js, MongoDB,
+          Express.js etc in other to improve my web developments skills.</p>
+      </section>
+      <section class="skills">
+        <h1>My Current Skills</h1>
+        <div class="my-skills">
+          <figure>
+            <img src="images/html.jpg" alt="html-logo">
+          </figure>
+          <figure>
+            <img src="images/css.jpg" alt="css-logo">
+          </figure>
+          <figure>
+            <img src="images/js.jpg" alt="JavaScript-logo">
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="contact">
+          <div class="container">
+              <h1>Contact Me</h1>
+              <div class="row">
+                  <div class="social-media">
+                      <i class="fa fa-phone"></i>
+                      <p> +23407063936868 </p>
+                  </div>
+                  <div class="social-media">
+                      <i class="fa fa-envelope"></i>
+                      <p> Adedeji006@gmail.com </p>
+                  </div>
+                  <div class="social-media">
+                      <i class="fa fa-internet-explorer"></i>
+                      <p> www.adetoba.com </p>
+                  </div>
+              </div>
+              <div class="button">
+                  <button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
+                  <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire Me</button>
+              </div> 
+          </div>
+          <div class="foot">
+              <p>Designed and developed by Adetoba Adedeji</p>
+          </div>
+        </section>
+  </footer>
+
+
+      <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+            const links = document.querySelectorAll(".nav-links li");
+            const profile_picture = document.querySelector("#profile_picture");
+
+            hamburger.addEventListener("click", () => {
+            profile_picture.style.opacity = profile_picture.style.opacity ==  "0.01" ? "0.9" : "0.01";
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+            });
+
+
+      </script>
+</body>
+</html>
