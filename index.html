@@ -17,9 +17,9 @@
         <div class="line"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
     <div class="user-box">
@@ -34,7 +34,7 @@
   </header>
   
     <main class="wrapper">
-      <section class="about">
+      <section class="about" id="about">
         <h1>Who am I ?</h1>
         <p> I'm <span>Adetoba Adedeji</span>, a highly organized and detail-oriented Chemical Engineering graduate. 
           I love technology and I developed passion for Software Development during my undergraduate days, and now a Frontend Developer
@@ -42,7 +42,7 @@
           HTML, CSS, Bootstrap and JavaScript. I'm currently learning other tools such as React.js, Vue, Node.js, MongoDB,
           Express.js etc in other to improve my web developments skills.</p>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <h1>My Current Skills</h1>
         <div class="my-skills">
           <figure>
@@ -59,13 +59,13 @@
     </main>
 
     <footer>
-      <section class="contact">
+      <section class="contact" id="contact">
           <div class="container">
               <h1>Contact Me</h1>
               <div class="row">
                   <div class="social-media">
                       <i class="fa fa-phone"></i>
-                      <p> +23407063936868 </p>
+                      <p> +23407063936868</p>
                   </div>
                   <div class="social-media">
                       <i class="fa fa-envelope"></i>
@@ -73,7 +73,7 @@
                   </div>
                   <div class="social-media">
                       <i class="fa fa-internet-explorer"></i>
-                      <p> www.adetoba.com </p>
+                      <p> adetoba.netlify.app </p>
                   </div>
               </div>
               <div class="button">
@@ -92,10 +92,11 @@
             const hamburger = document.querySelector(".hamburger");
             const navLinks = document.querySelector(".nav-links");
             const links = document.querySelectorAll(".nav-links li");
+            const lines = document.querySelector(".line");
             const profile_picture = document.querySelector("#profile_picture");
 
             hamburger.addEventListener("click", () => {
-            profile_picture.style.opacity = profile_picture.style.opacity ==  "0.01" ? "0.9" : "0.01";
+            profile_picture.style.opacity = profile_picture.style.opacity ==  "0.01" ? "0.99" : "0.01";
             navLinks.classList.toggle("open");
             links.forEach(link => {
                 link.classList.toggle("fade");
