@@ -11,12 +11,8 @@
 <body>
   <header>
     <nav>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
       <ul class="nav-links">
+        <li><a id="home">Home</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
@@ -83,27 +79,9 @@
           </div>
           <div class="foot">
               <p>Designed and developed by Adetoba Adedeji</p>
+              <button type="button" class="btn btn-primary"><a href="#home"><i class="fa fa-arrow-up"></i></a></button>
           </div>
         </section>
   </footer>
-
-
-      <script>
-            const hamburger = document.querySelector(".hamburger");
-            const navLinks = document.querySelector(".nav-links");
-            const links = document.querySelectorAll(".nav-links li");
-            const lines = document.querySelector(".line");
-            const profile_picture = document.querySelector("#profile_picture");
-
-            hamburger.addEventListener("click", () => {
-            profile_picture.style.opacity = profile_picture.style.opacity ==  "0.01" ? "0.99" : "0.01";
-            navLinks.classList.toggle("open");
-            links.forEach(link => {
-                link.classList.toggle("fade");
-            });
-            });
-
-
-      </script>
 </body>
 </html>
