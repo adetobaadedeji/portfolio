@@ -5,7 +5,7 @@ html{
 body{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/body_bg.jpg);
   background-color: black;
@@ -54,10 +54,9 @@ header{
     
 }
 
-.user-box h1{
+.user-box h1, .user-box p{
   color: #fff;
-  font-size: 300%;
-  font-weight: bolder;
+  
   text-align: center;
   margin: 10px 0;
   border-radius: 10px;
@@ -65,26 +64,19 @@ header{
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 1.5s linear infinite;
 }
 
+.user-box h1{
+  font-size: 300%;
+  font-weight: bolder;
+}
+
 .user-box p{
-  color: #fff;
   font-size: 200%;
   font-weight: bold;
-  text-align: center;
-  margin: 10px 0;
-  background: linear-gradient(to left, #e72a3a 10%, #fff 50%, #5bdaff 60%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 1.5s linear infinite;
 }
 
 @keyframes textclip {
@@ -96,7 +88,6 @@ to {
 nav {
     height: 10vh;
     margin-bottom: 10px;
-    /* padding: 20px; */
   }
   
 .nav-links {
@@ -137,11 +128,11 @@ footer{
 /* --------- main content---------------- */
 .wrapper{
   width: 60%;
-  margin: 20px auto;
+  margin: 20px auto 5px;
   color:#fff;
 }
 
-.wrapper h1{
+.wrapper h2{
   font-size: 2em;
   text-align: center;
   background: linear-gradient(to left, #e72a3a 10%,  #5bdaff 60%, #e72a3a);
@@ -152,7 +143,7 @@ footer{
 .wrapper .about p{
   margin-top: 10px;
   font-size: 1.3em;
-  text-justify: distribute;
+  text-align: justify;
   line-height: 1.5em;
 }
 
@@ -178,8 +169,30 @@ footer{
 }
 
 .wrapper .my-skills figure img{
-  width: 100%;
+  width: 80%;
   border-radius: 20%;
+}
+
+.wrapper .my-projects{
+  width: 100%;
+  margin-top: 40px;
+}
+
+ .my-projects .projects {
+   width: 85%;
+   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects a{
+  width: 45%;
+  margin-top: 40px;
+}
+
+.projects a img{
+  width: 100%;
 }
 
 /* -------------main content ends here---------------- */
@@ -189,7 +202,7 @@ footer{
   width: 100%;
 }
 
-.container h1{
+.container h2{
     text-align: center;
     font-size: 2em;
     background: linear-gradient(to left, #e72a3a 10%,  #5bdaff 60%, #e72a3a);
@@ -238,7 +251,7 @@ footer{
 }
 
 .container .btn:hover {
-    border: 2px solid #000;
+    border: 2px solid rgb(25, 25, 25);
     background: #000 !important;
     transition: 0.6s;
 }
@@ -262,16 +275,26 @@ footer{
     text-align: center;
 }
 
-.contact .foot button{
+.contact .foot span{
   margin-left: 2em;
   padding: 7px;
   margin-top: -14px;
 }
 
-.contact .foot button .fa{
+.contact .foot span .fa{
   color: #e72a3a;
+  background-color: #fff;
   padding: 0 5px ;
   font-size: 2em ;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
 }
 
 @media all and (min-width: 700px) and (max-width:1024px){
@@ -316,8 +339,9 @@ footer{
     width: 95%;
   }
 
-  .contact .foot button .fa{
+  .contact .foot span .fa{
     color: #e72a3a;
+    background-color: #fff;
     padding: 0 2px ;
     font-size: 1.5em ;
   }
@@ -362,6 +386,10 @@ footer{
 
   .container .social-media{
     margin-bottom: 20px;
+  }
+
+  .contact .foot span{
+    margin-top: -10px;
   }
 
 }

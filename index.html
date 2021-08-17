@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./reset.css" rel="stylesheet" type="text/css" >
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./reset.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <title>My Profile Page</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a id="home">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-    <div class="user-box">
-      <figure>
-          <img id="profile_picture" src="images/profile_picture.jpg" alt="profile picture">
-      </figure>
-      <div>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a id="home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="user-box">
+        <figure>
+          <img
+            id="profile_picture"
+            src="images/profile_picture.jpg"
+            alt="profile picture"
+          />
+        </figure>
+        <div>
           <h1>Adetoba Adedeji</h1>
-          <p> FrontEnd Developer</p>
+          <p>FrontEnd Developer</p>
+        </div>
       </div>
-  </div>
-  </header>
-  
+    </header>
+
     <main class="wrapper">
       <section class="about" id="about">
-        <h1>Who am I ?</h1>
-        <p> I'm <span>Adetoba Adedeji</span>, a highly organized and detail-oriented Chemical Engineering graduate. 
-          I love technology and I developed passion for Software Development during my undergraduate days, and now a Frontend Developer
-          with a year of experience in Frontend Web Development. I have a depth knowledge of Frontend Web Development using development tools such as
-          HTML, CSS, Bootstrap and JavaScript. I'm currently learning other tools such as React.js, Vue, Node.js, MongoDB,
-          Express.js etc in other to improve my web developments skills.</p>
+        <h2>Who am I ?</h2>
+        <p>
+          I'm <span>Adetoba Adedeji</span>, a highly organized and
+          detail-oriented Chemical Engineering graduate. I love technology and I
+          developed passion for Software Development during my undergraduate
+          days, and now a Frontend Developer with a year of experience in
+          Frontend Web Development. I have very good knowledge of Frontend Web
+          Development using HTML, CSS (SCSS), JavaScript ES6+. I'm experienced
+          with Frameworks/Libraries like BootStrap, React, and also Redux, for
+          state management .
+        </p>
       </section>
       <section class="skills" id="skills">
-        <h1>My Current Skills</h1>
+        <h2>My Current Skills</h2>
         <div class="my-skills">
           <figure>
-            <img src="images/html.jpg" alt="html-logo">
+            <img src="images/html.jpg" alt="html-logo" />
           </figure>
           <figure>
-            <img src="images/css.jpg" alt="css-logo">
+            <img src="images/css.jpg" alt="css-logo" />
           </figure>
           <figure>
-            <img src="images/js.jpg" alt="JavaScript-logo">
+            <img src="images/js.jpg" alt="JavaScript-logo" />
           </figure>
+        </div>
+        <div class="my-skills">
+          <figure>
+            <img src="images/sass.png" alt="JavaScript-logo" />
+          </figure>
+          <figure>
+            <img src="images/react.png" alt="JavaScript-logo" />
+          </figure>
+          <figure>
+            <img src="images/redux.png" alt="JavaScript-logo" />
+          </figure>
+        </div>
+      </section>
+      <section class="my-projects">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <a href="https://adetobaadedeji.github.io/myReads/">
+            <img
+              src="images/my-reads.png"
+              alt="sreenshot of my-reads webpage"
+            />
+          </a>
+          <a href="https://adetobaadedeji.github.io/windbnb/">
+            <img src="images/windbnb.png" alt="screenshot of windbnb webpage" />
+          </a>
         </div>
       </section>
     </main>
 
     <footer>
       <section class="contact" id="contact">
-          <div class="container">
-              <h1>Contact Me</h1>
-              <div class="row">
-                  <div class="social-media">
-                      <i class="fa fa-phone"></i>
-                      <p> +23407063936868</p>
-                  </div>
-                  <div class="social-media">
-                      <i class="fa fa-envelope"></i>
-                      <p> Adedeji006@gmail.com </p>
-                  </div>
-                  <div class="social-media">
-                      <i class="fa fa-internet-explorer"></i>
-                      <p> adetoba.netlify.app </p>
-                  </div>
-              </div>
-              <div class="button">
-                  <button type="button" class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
-                  <button type="button" class="btn btn-primary"><i class="fa fa-rocket"></i>Hire Me</button>
-              </div> 
+        <div class="container">
+          <h2>Contact Me</h2>
+          <div class="row">
+            <div class="social-media">
+              <a href="tel:+2347063935898">
+                <i class="fa fa-phone"></i>
+                <p>+2347063935898</p>
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="mailto:adetoba22@gmail.com">
+                <i class="fa fa-envelope"></i>
+                <p>adetoba22@gmail.com</p>
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="https://github.com/adetobaadedeji">
+                <i class="fa fa-github"></i>
+                <p>adetobaadedeji</p>
+              </a>
+            </div>
           </div>
-          <div class="foot">
-              <p>Designed and developed by Adetoba Adedeji</p>
-              <button type="button" class="btn btn-primary"><a href="#home"><i class="fa fa-arrow-up"></i></a></button>
+          <div class="button">
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-download"></i>Resume
+            </button>
+            <button type="button" class="btn btn-primary">
+              <i class="fa fa-rocket"></i>Hire Me
+            </button>
           </div>
-        </section>
-  </footer>
-</body>
+        </div>
+        <div class="foot">
+          <p>Designed and developed by Adetoba Adedeji</p>
+          <span class="btn btn-primary"><a href="#home"><i class="fa fa-arrow-up"></i></a
+          ></span>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
