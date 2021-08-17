@@ -159,11 +159,12 @@ nav {
 
 .wrapper .my-skills figure{
   width: 20%;
+  text-align: center;
 }
 
 .wrapper .my-skills figure img{
   width: 80%;
-  border-radius: 20%;
+  border-radius: 25%;
 }
 
 .wrapper .my-projects{
@@ -290,12 +291,12 @@ footer{
   font-size: 2em ;
 }
 
-.social-media a {
+ a {
   color: #fff;
   text-decoration: none;
 }
 
-.social-media a:hover {
+ a:hover {
   text-decoration: underline;
 }
 
